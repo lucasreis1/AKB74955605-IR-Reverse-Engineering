@@ -1,6 +1,6 @@
 The protocol seems proprietary to LG controllers and close to the X-sat mitsubishi protocol. The idea is that every signal starts with a header composed of a 3.3 ms pulse and 9.9 ms space, followed by the signal, which is composed of 28 pulse/space pairs, where every pair starts with a 500 us pulse and the space defines the binary bit. If space is 500 us, it is a `logical 0`. If the space is composed of 1500 us, it is a `logical 1`.
 
-![[protocol_summary.png]]
+![protocol summary](protocol_summary.png)
 
 # Binary codes
 Codes are always composed of 7 columns of 4 bytes, separated as:
